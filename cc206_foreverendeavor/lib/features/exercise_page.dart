@@ -9,8 +9,8 @@ class Exercise extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-        home: Column(children: [
+    return Scaffold(
+        body: Column(children: [
       Image.asset('assets/images/a.jpg'),
     ]));
   }
