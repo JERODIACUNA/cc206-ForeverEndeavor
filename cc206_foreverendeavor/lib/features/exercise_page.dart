@@ -10,8 +10,11 @@ class Exercise extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body: Column(children: [
-      Image.asset('assets/images/a.jpg'),
-    ]));
+        body: Center(
+            child: SizedBox(
+      width: 600.0, // Set the desired width
+      height: 600.0,
+      child: Image.asset('assets/images/a.jpg'),
+    )));
   }
 }
