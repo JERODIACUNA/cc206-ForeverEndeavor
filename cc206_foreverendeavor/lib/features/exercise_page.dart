@@ -5,16 +5,19 @@ void main() {
 }
 
 class Exercise extends StatelessWidget {
-  const Exercise({super.key});
+  const Exercise({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-        body: Center(
-            child: SizedBox(
-      width: 600.0, // Set the desired width
-      height: 600.0,
-      child: Image.asset('assets/images/a.jpg'),
-    )));
+    return Container(
+      decoration: BoxDecoration(
+        image: DecorationImage(
+          image:
+              AssetImage('assets/images/a.jpg'), // Replace with your image path
+          fit: BoxFit.contain,
+          alignment: Alignment.topCenter, // Align the image to the top center
+        ),
+      ),
+    );
   }
 }
